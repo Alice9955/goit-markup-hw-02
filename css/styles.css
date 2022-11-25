@@ -1,5 +1,31 @@
 
 
-/* styles main page */
-:root
--- action primary colour: #2196F3
+/* 
+:root -- action primary colour: #2196F3;
+
+-- primary dark text color: #757575;
+-- secondery dark text color: #212121;
+-- primary light text color: #FFFFFF;
+-- secondery color: rgba(255, 255, 255, 0.6);
+-- background color: #2F303A;
+
+*/
+
+
+.page {
+    background-color: #FFFFFF;
+    color: #757575;
+}
+
+.logo {
+    color: #000000;
+}
+
+.logo-style {
+    color: #2196F3;
+}
+
+.style-reset {
+    list-style: none;
+}
+
