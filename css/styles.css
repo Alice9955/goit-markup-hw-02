@@ -1,31 +1,109 @@
 
 
-/* 
-:root -- action primary colour: #2196F3;
 
--- primary dark text color: #757575;
--- secondery dark text color: #212121;
--- primary light text color: #FFFFFF;
--- secondery color: rgba(255, 255, 255, 0.6);
--- background color: #2F303A;
+:root { 
+--action-primary-colour: #2196F3;
 
-*/
+--primary-dark-text-color: #757575;
+--secondery-dark-text-color: #212121;
+--primary-light-text-color: #FFFFFF;
+--secondery-color: rgba(255, 255, 255, 0.6);
+--background-color: #2F303A;
+--button-background-color: #F5F4FA;
+}
+
 
 
 .page {
-    background-color: #FFFFFF;
-    color: #757575;
+    background-color: var(--primary-light-text-color);
+    color: var(--primary-dark-text-color);
 }
 
 .logo {
     color: #000000;
 }
 
+.logo:hover,
+.logo:focus {
+    color: var(--action-primary-colour);
+}
+
 .logo-style {
-    color: #2196F3;
+    color: var(--action-primary-colour);
 }
 
 .style-reset {
     list-style: none;
 }
+
+/* section "Hero"  */
+.hero {
+    background-color: var(--background-color);
+}
+
+.hero-title {
+    color: var(--primary-light-text-color);
+}
+
+.hero-button {
+    color: var(--primary-light-text-color);
+    background-color: var(--action-primary-colour);
+    border: none;
+}
+
+/* Site nav*/
+
+.site-nav .nav-link {
+    color: var(--secondery-dark-text-color);
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus {
+    color: var(--action-primary-colour);
+}
+
+/* Site sections */
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+
+
+/*
+1)  h2, h3 {
+    color: var(--secondery-dark-text-color);
+}
+ 2)
+
+.sections h2 {
+    color: var(--secondery-dark-text-color);
+}
+
+.lists h3 {
+    color: var(--secondery-dark-text-color);
+}
+*/
+
+.sections h2, h3 {
+    color: var(--secondery-dark-text-color);
+}
+
+
+/* Portfolio page */
+
+.portfolio-nav .portfolio-button {
+
+ color: var(--secondery-dark-text-color);
+ background-color: var(--button-background-color);
+ border: none;
+}
+
+.portfolio-nav .portfolio-button:hover,
+.portfolio-nav .portfolio-button:focus {
+
+    color: var(--primary-light-text-color);
+    background-color: var(--action-primary-colour);
+}
+ 
 
