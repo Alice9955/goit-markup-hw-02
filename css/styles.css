@@ -6,7 +6,7 @@
 
 --primary-dark-text-color: #757575;
 --secondery-dark-text-color: #212121;
---primary-light-text-color: #FFFFFF;
+--primary-white-color: #FFFFFF;
 --secondery-color: rgba(255, 255, 255, 0.6);
 --background-color: #2F303A;
 --button-background-color: #F5F4FA;
@@ -15,7 +15,7 @@
 
 
 .page {
-    background-color: var(--primary-light-text-color);
+    background-color: var(--primary-white-color);
     color: var(--primary-dark-text-color);
 }
 
@@ -27,6 +27,7 @@
 .logo:focus {
     color: var(--action-primary-colour);
 }
+
 
 .logo-style {
     color: var(--action-primary-colour);
@@ -42,11 +43,11 @@
 }
 
 .hero-title {
-    color: var(--primary-light-text-color);
+    color: var(--primary-white-color);
 }
 
-.hero-button {
-    color: var(--primary-light-text-color);
+.button.primary {
+    color: var(--primary-white-color);
     background-color: var(--action-primary-colour);
     border: none;
 }
@@ -62,6 +63,19 @@
     color: var(--action-primary-colour);
 }
 
+.site-nav .nav-link.current {
+    color: var(--action-primary-colour);
+}
+
+
+.get-in-touch.primary {
+    color: var(--primary-dark-text-color);
+}
+
+.get-in-touch.primary:hover,
+.get-in-touch.primary:focus {
+    color: var(--action-primary-colour);
+}
 /* Site sections */
 
 .visually-hidden {
@@ -99,11 +113,47 @@
  border: none;
 }
 
+
 .portfolio-nav .portfolio-button:hover,
 .portfolio-nav .portfolio-button:focus {
 
-    color: var(--primary-light-text-color);
+    color: var(--primary-white-color);
     background-color: var(--action-primary-colour);
 }
  
+
+/* footer */
+
+.footer {
+    background-color: var(--background-color);
+}
+
+.logo-style-secondary {
+    color: var(--primary-white-color);
+}
+
+.address {
+    color: var(--primary-white-color);
+}
+
+.get-in-touch {
+    color: var(--secondery-color);
+}
+
+.get-in-touch:hover,
+.get-in-touch:focus {
+    color: var(--action-primary-colour);
+
+}
+
+ВО ВРЕМЯ ФОКУСА НЕ МЕНЯЕТСЯ ЛОГО ЦВЕТОМ НА АКЦЕНТ ЦВЕТ
+.logo-style-secondary {
+    color: var(--primary-white-color);
+}
+
+.logo .logo-style-secondary:hover,
+.logo .logo-style-secondary:focus {
+    color: var(--action-primary-colour);
+}
+
 
