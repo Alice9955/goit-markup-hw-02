@@ -13,14 +13,38 @@
 }
 
 
-
+/* <body class="page"> */
 .page {
     background-color: var(--primary-white-color);
     color: var(--primary-dark-text-color);
+    font-family: Roboto, sans-serif;
 }
 
+/* logo */
 .logo {
     color: #000000;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 0.03em;
+
+ /* Прибираємо бо за замовчуванням стоїть це значення;
+    прибираэмо ці значення щоб не перенавантажувати зайвими властивостями
+    Задає накреслення тексту -  font-style: normal;  */
+
+    font-weight: 700;
+/* За замовчуванням вага шрифту абзаців (посилання),
+    який встановлений в таблиці стилів браузера,
+    дорівнює 400,
+    а вага заголовків - 700.
+    Залишаємо це значення font-weight: 700 */
+        
+   
+    font-size: 26px;
+
+    line-height: 1.19;
+/* line-height (31 px) / font-size (26px) = 1.19 
+    Скруглили значення і залишили 2 цифри після коми. */
+    
+    letter-spacing: 0.03em;
 }
 
 .logo:hover,
@@ -50,12 +74,31 @@
     color: var(--primary-white-color);
     background-color: var(--action-primary-colour);
     border: none;
+    font-family: inherit;
+/* Якщо в тег body або клас присвоєний цьому тегу прописати сімейство шрифтів,
+    то все тіло документа успадкує цей шрифт крім кнопок. Тому кнопці задаємо 
+    значення font-family: inherit;  */
 }
 
 /* Site nav*/
 
 .site-nav .nav-link {
     color: var(--secondery-dark-text-color);
+    font-family: 'Roboto';
+ /* font-style: normal; значення за замовченням - прибираємо цю властивість, щоб не перевантажувати. */
+    
+    font-weight: 500;
+ /* За замовчуванням вага шрифту абзаців, який встановлений в таблиці стилів браузера, дорівнює 400, а вага заголовків - 700. 
+    Залишаємо це значення.*/
+
+    font-size: 14px;
+/* За замовчуванням розмір шрифту абзаців, який встановлений в таблиці стилів браузера, дорівнює 16px. Тому залтшаємо це значення. */
+    line-height: 1.14;
+
+/* line-height (16 px) / font-size (14px) = 1.14 
+   Скруглили значення і залишили 2 цифри після коми. */
+    letter-spacing: 0.02em;
+
 }
 
 .site-nav .nav-link:hover,
@@ -111,6 +154,10 @@
  color: var(--secondery-dark-text-color);
  background-color: var(--button-background-color);
  border: none;
+ font-family: inherit;
+    /* Якщо в тег body або клас присвоєний цьому тегу прописати сімейство шрифтів,
+    то все тіло документа успадкує цей шрифт крім кнопок. Тому кнопці задаємо 
+    значення font-family: inherit;  */
 }
 
 
@@ -155,5 +202,4 @@
 .logo .logo-style-secondary:focus {
     color: var(--action-primary-colour);
 }
-
 
