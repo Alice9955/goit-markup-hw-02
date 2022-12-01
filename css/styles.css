@@ -376,7 +376,7 @@
     line-height: 1.71;
 /* line-height (24 px) / font-size (14 px) = 1.71 ; Скруглили значення і залишили 2 цифри після коми. */
 /* letter-spacing: 0.03em; Прибираємо, бо успадковано від body*/  
-    text-decoration: none;
+    
 }
 
 
