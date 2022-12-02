@@ -39,15 +39,13 @@
 /* line-height (31 px) / font-size (26px) = 1.19 
     Скруглили значення і залишили 2 цифри після коми. */
     text-decoration: none;
-    
-  
 }
 
-.logo:hover,
+/* .logo:hover,
 .logo:focus {
     color: var(--action-primary-colour);
 }
-
+ */
 
 .logo-style {
     color: var(--action-primary-colour);
@@ -337,10 +335,10 @@
 
 }
 
-.logo-style-secondary:hover,
+/* .logo-style-secondary:hover,
 .logo-style-secondary:focus  {
     color: var(--action-primary-colour);
-}
+} */
 
 
 .location {
